@@ -22,7 +22,7 @@ RUN apt-get install -y mono-vbnc
 RUN apt-get install -y npm
 RUN apt-get install -y golang-go	
 RUN apt-get install -y curl
-RUN curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+RUN curl -sL https://deb.nodesource.com/setup_8.x | -E bash -
 RUN apt-get install -y nodejs
 
 RUN npm install -g underscore request express jade shelljs passport http sys jquery lodash async mocha moment connect validator restify ejs ws co when helmet wrench brain mustache should backbone forever  debug && export NODE_PATH=/usr/local/lib/node_modules/
